@@ -1,0 +1,38 @@
+.about_bigdiv {
+  background-color: black;
+  padding: 70px 70px 70px 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+.about_div {
+  display: flex;
+  justify-content: space-between;
+}
+.about_bigdiv::after {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/icon/outline/earth.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 808.68px;
+  height: 481.27px;
+  left: 14%;
+  bottom: -127.2px;
+  z-index: -1;
+}
+@media only screen and (max-width: 768px) {
+  .about_bigdiv {
+    padding: 40px 30px;
+  }
+  .about_div {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .about_bigdiv::after {
+    width: 708.68px;
+    height: 381.27px;
+    left: -25%;
+    bottom: 100.2px;
+  }
+}

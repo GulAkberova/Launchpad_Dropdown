@@ -1,0 +1,134 @@
+.footer_bigdiv {
+  background-color: var(--main-color);
+  padding: 5px 90px 5px 90px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.footer_about {
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+.footer_bigdiv::after {
+  position: absolute;
+  width: 407px;
+  height: 461px;
+  right: 0.6px;
+  bottom: 0.42px;
+
+  background: rgba(14, 117, 116, 0.5);
+  opacity: 0.5;
+  filter: blur(250px);
+  z-index: -1;
+}
+.footer_bigdiv::before {
+  content: "";
+  position: absolute;
+  width: 107px;
+  height: 461px;
+  left: 0.6px;
+  bottom: 0;
+
+  background: rgba(14, 117, 116, 0.5);
+  opacity: 0.5;
+  filter: blur(250px);
+  z-index: -5;
+}
+.footer_div {
+  border-top: 0.58px solid #cdcddf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  z-index: 9;
+  position: relative;
+}
+.footer_div ul,
+.footer_certik_img_div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.footer_img_div li {
+  margin: 0px 13px;
+}
+.footer_img_div li a img {
+  width: 35px;
+  height: 35px;
+}
+.footer_img_div li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  background-image: linear-gradient(0deg, #8c867b, #8c867b),
+    radial-gradient(
+      429.69% 713.47% at -84.97% 182.09%,
+      #835d2d 0%,
+      #8a6331 24%,
+      #f8e07f 100%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.footer_certik_img_div {
+  background: #151619;
+  border-radius: 171.5px;
+  border: 1px solid #835d2d;
+  padding: 0px 10px;
+  /* border: 1px solid red; */
+}
+.footer_certik_img_div ul li:nth-of-type(1) img {
+  width: 28px;
+  height: 28px;
+  padding-top: 2px;
+}
+.footer_certik_img_div ul li:nth-of-type(2) img {
+  width: 68px;
+  height: 15px;
+  padding-top: 2px;
+}
+.footer_certik_img_div ul li:nth-of-type(3) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(174, 174, 174, 0.05),
+      rgba(174, 174, 174, 0.05)
+    ),
+    linear-gradient(348.01deg, #ffd79f 1.28%, #85663e 98.72%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-left: 5px;
+  padding: 0px 5px;
+  position: relative;
+}
+.footer_certik_img_div ul li:nth-of-type(3)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+      0deg,
+      rgba(174, 174, 174, 0.05),
+      rgba(174, 174, 174, 0.05)
+    ),
+    linear-gradient(348.01deg, #ffd79f 1.28%, #85663e 98.72%);
+}
+@media only screen and (max-width: 768px) {
+  .footer_rwd_none,
+  .footer_img_div {
+    display: none;
+  }
+  .footer_div {
+    border: none;
+    padding: 10px 0px;
+  }
+  .footer_bigdiv {
+    display: none;
+  }
+}

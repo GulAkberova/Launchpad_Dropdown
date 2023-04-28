@@ -1,0 +1,308 @@
+.rewards_bigdiv {
+  background-color: var(--main-color);
+  padding: 70px 70px 70px 70px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+.rewards_div {
+  display: flex;
+  justify-content: space-between;
+}
+/* ________________Cube________________ */
+.cube {
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.cube1 {
+  display: none;
+}
+.polygon {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+.shape {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+/* ___________Reward Component___________ */
+.reward_div {
+  border: 1px solid var(--border-color);
+  background: linear-gradient(
+    137.43deg,
+    rgba(255, 255, 255, 0.0385) 3.89%,
+    rgba(195, 210, 191, 0.0245) 54.78%,
+    rgba(255, 255, 255, 0.042) 100%
+  );
+  backdrop-filter: blur(7px);
+  border-radius: 12px;
+  width: 27%;
+  height: max-content;
+  padding: 20px 21px 10px 21px;
+}
+.reward_div h2 {
+  font-size: 23px;
+  color: var(--white-color);
+  font-weight: 700;
+  padding-left: 10px;
+}
+.reward_div h2 span {
+  font-size: 21px;
+  font-weight: 500;
+  padding: 0px 10px;
+  border-left: 1px solid white;
+  margin-left: 5px;
+}
+/* .reward_divs a:nth-of-type(1) {
+  margin: 13px 0px;
+} */
+
+.reward_divs a {
+  padding: 7px 16px 7px 25px;
+  background: linear-gradient(
+    137.43deg,
+    rgba(52, 52, 52, 0.5) 3.89%,
+    rgba(61, 61, 61, 0.2) 100%
+  );
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.reward_divs a div img:nth-of-type(1) {
+  display: none;
+}
+.reward_divs a .right_rgb {
+  display: none;
+}
+.reward_divs a.active div img:nth-of-type(2) {
+  display: none;
+}
+.reward_divs a.active div img:nth-of-type(1) {
+  display: block;
+}
+.reward_divs a.active div {
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.reward_divs a.active .right_rgb {
+  display: block;
+}
+.reward_divs a.active .right {
+  display: none;
+}
+
+.reward_divs a div {
+  display: flex;
+  align-items: center;
+}
+.reward_divs a div span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--white-color);
+}
+.reward_divs a div img {
+  width: 31px;
+  height: 31px;
+}
+.reward_divs a img {
+  width: 8px;
+  height: 12px;
+}
+
+/* __________________Hedgefi Component______________ */
+.hedgefi_bigdiv {
+  width: 28%;
+
+  color: var(--white-color);
+}
+
+.hedgefi_bigdiv h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 52px;
+}
+.hedgefi_bigdiv p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(218, 209, 212, 0.8);
+  margin: 17px 0px;
+}
+
+/* ________________Hpay Components__________ */
+.hpay_bigdiv {
+  width: 40%;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.hpay_divs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hpay_divs div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #d9d9d9;
+  width: 25%;
+  /* padding: 10px; */
+}
+.hpay_divs div:nth-of-type(4) {
+  border: none;
+}
+.hpay_divs div p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 38px;
+  color: #d9d9d9;
+}
+.hpay_divs div span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hpay_0 {
+  width: 50%;
+  background: #333333;
+  border-radius: 12px;
+  margin: auto;
+  padding: 3px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hpay_0 div {
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+  backdrop-filter: blur(19.5px);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+.hpay_0 div h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: -1px;
+
+  color: var(--white-color);
+}
+.hpay_0 h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+  letter-spacing: -1.5px;
+
+  color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .rewards_bigdiv {
+    padding: 40px 30px;
+  }
+  .rewards_div {
+    flex-direction: column;
+  }
+  .reward_div,
+  .hedgefi_bigdiv,
+  .hpay_bigdiv {
+    width: 100%;
+  }
+  .exchange_divs a div span {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .balance_bigdiv {
+    display: none;
+  }
+  .hedgefi_bigdiv {
+    padding: 40px 0px;
+  }
+  .hedgefi_bigdiv p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hpay_bigdiv {
+    flex-direction: column-reverse;
+  }
+  .hpay_divs div {
+    width: 50%;
+    border: none;
+    padding: 10px 0px;
+  }
+  .hpay_divs {
+    flex-wrap: wrap;
+  }
+  .hpay_0 {
+    width: 94%;
+    margin-bottom: 20px;
+  }
+  .hpay_divs div p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hpay_divs div span {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .cube {
+    display: none;
+  }
+  .cube1 {
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 0 !important;
+    /* display: block; */
+  }
+  .polygon {
+    top: 20%;
+    right: 0px;
+  }
+  .shape {
+    bottom: 30%;
+    right: 0px;
+  }
+}

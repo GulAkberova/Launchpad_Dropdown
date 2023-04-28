@@ -1,0 +1,237 @@
+.header_bigdiv {
+  background-color: var(--main-color);
+  padding: 35px 40px 35px 73px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  border-bottom: 3px solid var(--border-color);
+  z-index: 1;
+  overflow: hidden;
+}
+.header_about {
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header_bigdiv::after {
+  content: "";
+  position: absolute;
+  width: 435px;
+  height: 492px;
+  right: 0px;
+  top: 0px;
+
+  background: #0e7574;
+  opacity: 0.3;
+  filter: blur(250px);
+  z-index: -1;
+}
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header_nav div {
+  display: flex;
+  align-items: center;
+}
+.header_nav div ul {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.header_nav div ul li {
+  margin: 0px 13px;
+  position: relative;
+}
+.header_nav div ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+.header_lang {
+  position: relative;
+}
+.header_lang::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  border-radius: 7px;
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+}
+.header_lang li:nth-of-type(1):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  margin-bottom: -7px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+}
+
+.header_nav div ul:nth-of-type(1) li a.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  margin-bottom: -7px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+}
+.header_logo {
+  width: 57px;
+  height: 31px;
+}
+.header_nav div a button {
+  padding: 8px 25px;
+  border: 1px solid transparent;
+  background: linear-gradient(
+    103.04deg,
+    rgba(255, 233, 134, 0.88) -25.17%,
+    #bc7e20 77.94%,
+    #a74d01 128.68%
+  );
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 18px;
+  color: var(--white-color);
+}
+.header_shopping {
+  width: 30px;
+  height: 30px;
+  margin-top: 3px;
+}
+
+.shop_li {
+  position: relative;
+}
+.shop_card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: #58bd7d;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 12px;
+  font-variant: all-small-caps;
+
+  color: #ffffff;
+}
+.none {
+  display: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .header_nav div ul:nth-of-type(1),
+  .header_lang::after,
+  .header_lang li:nth-of-type(1) a,
+  .header_logo {
+    display: none;
+  }
+  .none {
+    display: block !important;
+  }
+  .header_lang li {
+    display: block !important;
+  }
+  .header_bigdiv {
+    padding: 25px 15px 25px 15px;
+  }
+  .home_certik_img_div {
+    background: #151619;
+    border-radius: 171.5px;
+    border: 1px solid #835d2d;
+    padding: 0px 3px;
+    display: flex;
+    align-items: center;
+  }
+  .home_certik_img_div ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  .home_certik_img_div ul li:nth-of-type(1) img {
+    width: 22px;
+    height: 22px;
+    padding-top: 2px;
+  }
+  .home_certik_img_div ul li:nth-of-type(2) img {
+    width: 58px;
+    height: 13px;
+    padding-top: 2px;
+  }
+  .home_certik_img_div ul li:nth-of-type(3) {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(174, 174, 174, 0.05),
+        rgba(174, 174, 174, 0.05)
+      ),
+      linear-gradient(348.01deg, #ffd79f 1.28%, #85663e 98.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 5px;
+    padding: 0px 5px;
+    position: relative;
+  }
+  .home_certik_img_div ul li:nth-of-type(3)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(174, 174, 174, 0.05),
+        rgba(174, 174, 174, 0.05)
+      ),
+      linear-gradient(348.01deg, #ffd79f 1.28%, #85663e 98.72%);
+  }
+  .header_nav div a button {
+    padding: 6px 25px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 16px;
+  }
+  .header_nav div ul {
+    padding: 0;
+  }
+  .header_lang li:nth-of-type(1) {
+    display: none !important;
+  }
+}
