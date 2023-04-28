@@ -44,13 +44,13 @@
   position: absolute;
   z-index: 99;
   top: 17%;
-  right: -3%;
+  right: -10%;
 }
 .card3 {
   position: absolute;
   z-index: 99;
   bottom: -15%;
-  left: -3%;
+  left: -10%;
 }
 .card4 {
   display: none;
